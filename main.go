@@ -13,6 +13,9 @@ func main() {
 	stripSingleImportAndProcess("libuserv1/user.go")
 	stripSingleImportAndProcess("libuserv2/user.go")
 
+	// and import in usev2.go fixes it
+	stripSingleImportAndProcess("libuserv2plus/user.go")
+
 	// aliased import is removed
 	stripSingleImportAndProcess("libuseralias/user.go")
 }
